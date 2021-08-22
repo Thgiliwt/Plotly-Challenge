@@ -25,7 +25,10 @@ function init(){
             orientation:"h"
         }
         var data_bar = [trace_bar]
-        Plotly.newPlot('bar',data_bar)
+        var layout_bar = {
+            title: "Top 10 Bacteria Cultures Found"
+        }
+        Plotly.newPlot('bar',data_bar,layout_bar)
 
         //2.demographic info
         //set demographic variables
@@ -74,6 +77,7 @@ function init(){
         //set gauge variables
         //(same as demographic info, i.e. init_info)
         //gauge plot
+        
         var data_gauge = [
             {
               type: "indicator",
@@ -82,7 +86,7 @@ function init(){
               title: { text: "Scrubs Per Week", font: { size: 24, color: "#999999" } },
               
               gauge: {
-                axis: { range: [null, 9], tickwidth: 1, tickcolor: "#000000" },
+                axis: { range: [null, 9], tickwidth: 1, tickcolor: "#000000", nticks:10 },
                 bar: { color: "#ff0000" },
                 bgcolor: "white",
                 borderwidth: 2,
@@ -93,7 +97,7 @@ function init(){
                   { range: [2, 3], color: "#99ffe6" },
                   { range: [3, 4], color: "#66ffd9" },
                   { range: [4, 5], color: "#33ffcc" },
-                  { range: [5, 6], color: "#00ffbf" },
+                  { range: [5, 6], color: "#00e6ac" },
                   { range: [6, 7], color: "#00cc99" },
                   { range: [7, 8], color: "#009973" },
                   { range: [8, 9], color: "#00664d" },
@@ -140,7 +144,10 @@ function optionChanged(){
             orientation:"h"
         }
         var data_bar = [trace_bar]
-        Plotly.newPlot('bar',data_bar)
+        var layout_bar = {
+            title: "Top 10 Bacteria Cultures Found"
+        }
+        Plotly.newPlot('bar',data_bar,layout_bar)
 
         //2.demographic info
         //set demographic variables
@@ -187,6 +194,7 @@ function optionChanged(){
         //set gauge variables
         //(same as demographic info, i.e. init_info)
         //gauge plot
+        
         var data_gauge = [
             {
               type: "indicator",
@@ -195,7 +203,7 @@ function optionChanged(){
               title: { text: "Scrubs Per Week", font: { size: 24, color: "#999999" } },
               
               gauge: {
-                axis: { range: [null, 9], tickwidth: 1, tickcolor: "#000000" },
+                axis: { range: [null, 9], tickwidth: 1, tickcolor: "#000000", nticks:10 },
                 bar: { color: "#ff0000" },
                 bgcolor: "white",
                 borderwidth: 2,
@@ -206,7 +214,7 @@ function optionChanged(){
                   { range: [2, 3], color: "#99ffe6" },
                   { range: [3, 4], color: "#66ffd9" },
                   { range: [4, 5], color: "#33ffcc" },
-                  { range: [5, 6], color: "#00ffbf" },
+                  { range: [5, 6], color: "#00e6ac" },
                   { range: [6, 7], color: "#00cc99" },
                   { range: [7, 8], color: "#009973" },
                   { range: [8, 9], color: "#00664d" },
