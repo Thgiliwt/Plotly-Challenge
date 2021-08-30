@@ -1,5 +1,5 @@
 # Plotly-Challenge
-This is the 11th homework from the coding boot camp course.
+This is the 12th homework from the coding boot camp course.
 This time I will build an interactive-dashboards about belly button biodiversity on numbers of test samples. This invovles: 
 1. using D3 lib to read json file
 2. using provided index.html file to set up dropdown menu options
